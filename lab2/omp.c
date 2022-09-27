@@ -56,7 +56,7 @@ void mulConst(int N, double *c, double t) {
 
 double norm(int N, const double *v) {
     double norm = 0;
-#pragma omp for reduction(+:norm)
+#pragma omp for
     for (int i = 0; i < N; i++) {
         norm += v[i] * v[i];
     }
