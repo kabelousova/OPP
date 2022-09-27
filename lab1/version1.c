@@ -85,7 +85,7 @@ int main(int argc, char **argv) {
     while (count < 5) {
         double bignorm;
         mul(N, N, A, x, c);
-        sub(N, c, b + shift);
+        sub(N, c, b);
 
         bignorm = norm(N, c);
 
